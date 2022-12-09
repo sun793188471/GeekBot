@@ -7,7 +7,7 @@ const FormData = require('form-data');
 class Bot {
   constructor () {
 
-    this.BOT_API = 'https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=655bcba4-f4de-4000-a3d1-c06ab99d3850';
+    this.BOT_API = process.env.bot_api;
     this.BOT_KEY = this.BOT_API.split('key=')[1];
   }
 
